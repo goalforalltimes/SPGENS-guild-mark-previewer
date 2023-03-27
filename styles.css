@@ -2,7 +2,6 @@
  margin: auto;
  width: 45%;
  text-align: center;
- border: 3px solid green;
  padding: 10px;
 }
 
@@ -10,6 +9,14 @@
  margin: auto;
  width: 75%;
  text-align: center;
- border: 3px solid gray;
  padding: 10px;
+}
+
+.markdesigner_back {
+  background-color: black;
+}
+
+
+.markdesigner_front {
+  background-color: red;
 }
