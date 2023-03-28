@@ -2,6 +2,7 @@
  margin: auto;
  width: 45%;
  text-align: center;
+ border: 3px solid green;
  padding: 10px;
 }
 
@@ -9,7 +10,13 @@
  margin: auto;
  width: 75%;
  text-align: center;
+ /*border: 3px solid green;*/
  padding: 10px;
+}
+
+.mdtable {
+  width: 480px;
+  border: none;
 }
 
 .markdesigner_back {
@@ -19,4 +26,36 @@
 
 .markdesigner_front {
   background-color: red;
+}
+
+.markdesigner_colorpanel {
+  text-align: center;
+}
+
+.md_bgc_t1 {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.md_bgc_t2 {
+  display: inline-block;
+}
+
+
+.md_bgc_t3 {
+  white-space: nowrap;
+  font-family: 'Lucida Console', monospace;
+  display: inline-block;
+}
+
+.md_bgc_t4 {
+  display: inline-block;
+}
+
+.md_bg_cc {
+  display: inline-block;
+  background-color: black;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
 }
