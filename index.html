@@ -1,15 +1,41 @@
 <html>
-  <head>
-    <script src="tablegen.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1 class="title">
-    SP Generations Guild Mark Designer
-    </h1>
-
-    <div class="markdesigner" id="markDesigner">
-      <table id='markDesignerTable' width='480px' border='none' align='center' cellspacing='0' cellpadding='0'></table>
-    </div>
-  </body>  
+	<head>
+		<script src="tablegen.js" defer>< script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1 class="title">SP Generations Guild Mark Designer</h1>
+		<div class="markdesigner" id="markDesigner">
+			<table class="mdtable" id='markDesignerTable' align='center' cellspacing='0' cellpadding='0'/>
+		</div>
+		<div class="markdesigner_colorpanel" id="markdesigner_colorpanel">
+			<div id="md_bgc">
+				<div class="md_bgc_t1">
+					<div class="md_bgc_t2">Current Background color:</div>
+					<div class="md_bgc_t2" id="md_bgc_ct">0x0000</div>
+				</div>
+				<br>
+				<div class="md_bgc_t3">
+					<div class="md_bgc_t4">Red: 0 &nbsp;</div>
+					<div class="md_bgc_t4">Green: 0 &nbsp;</div>
+					<div class="md_bgc_t4">Blue: 0 &nbsp;</div>
+				</div>
+				<div><button>Show Details</button></div>
+				<iframe name="dummyframe" id="dummyframe" style="display: none;"/>
+				<form id="md_bg" onsubmit="return md_update_bg();" target="dummyframe">
+					<div class="md_bg_cc"/>
+					<label class="md_bg_ct" id="md_bg_ct" for="md_bg_cb">0x0000</label>
+					<input type="checkbox" class="md_bg_cb" id="md_bg_cb">
+					<label for="md_bg_r">Red (0~31)</label>
+					<input type="number" id="md_bg_r" name="Red" min="0" max="31" value="0">
+					<label for="md_bg_g">Green (0~63)</label>
+					<input type="number" id="md_bg_g" name="Green" min="0" max="63" value="0">
+					<label for="md_bg_g">Blue (0~31)</label>
+					<input type="number" id="md_bg_b" name="Blue" min="0" max="31" value="0">
+					<input type="submit">
+				</form>
+			</div>
+			<div id="md_fgc">Foreground color:</div>
+		</div>
+	</body>
 </html>
