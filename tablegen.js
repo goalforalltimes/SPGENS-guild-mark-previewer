@@ -1,4 +1,4 @@
-var imageext = "https://i.imgur.com/wAVWJtZ.png"
+var imageext = "sample1.png"
 var samplecoords = [
 	[152,252],
   [302,252],
