@@ -334,6 +334,6 @@ md_preview_bg();
 md_update_bg();
 md_preview_fg();
 md_update_fg();
-document.getElementById("testimage_img").style = "";
+//document.getElementById("testimage_img").style = "";
 document.getElementById("testimage_img").src = imageext;
 updatesample();
