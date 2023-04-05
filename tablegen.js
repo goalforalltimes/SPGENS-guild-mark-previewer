@@ -145,6 +145,7 @@ function updatesample() {
 	if (samplecanvas.getContext) {
 		console.log("updatesample drawing");
 		samplecxt = samplecanvas.getContext("2d");
+		sampleimage.src = "sample1.png";
 		samplecxt.drawImage(sampleimage, 0, 0);
 		var bgc = getComputedStyle(rootstyle).getPropertyValue('--mdbgc');
 		var fgc = getComputedStyle(rootstyle).getPropertyValue('--mdfgc');
