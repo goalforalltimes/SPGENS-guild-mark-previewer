@@ -143,15 +143,15 @@ function updatemdcv1() {
 function updatesample() {
 	if (samplecanvas.getContext) {
 		samplecxt = samplecanvas.getContext("2d");
-  		samplecxt.drawImage(sampleimage, 0, 0);
-    	var bgc = getComputedStyle(rootstyle).getPropertyValue('--mdbgc');
+		samplecxt.drawImage(sampleimage, 0, 0);
+		var bgc = getComputedStyle(rootstyle).getPropertyValue('--mdbgc');
     	var fgc = getComputedStyle(rootstyle).getPropertyValue('--mdfgc');
-  		for (var k = 0; k < samplecoords.length; k++) {
-    		for (var height = 0; height < 13; height++) {
-    			for (var width = 0; width < 12; width++) {
-      				var offset = height * 12 + width;
-          			var x = samplecoords[k][0];
-          			var y = samplecoords[k][1];
+		for (var k = 0; k < samplecoords.length; k++) {
+			for (var height = 0; height < 13; height++) {
+				for (var width = 0; width < 12; width++) {
+					var offset = height * 12 + width;
+					var x = samplecoords[k][0];
+					var y = samplecoords[k][1];
         			if (designerString.charAt(offset) == '1') {
        					//console.log("draw: offset " + offset + " = " + fgc);
      	  				samplecxt.fillStyle = fgc;
