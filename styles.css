@@ -1,3 +1,7 @@
+:root {
+  --mdbgc: black;
+  --mdfgc: white; 
+}
 .title{
  margin: auto;
  width: 45%;
@@ -20,12 +24,12 @@
 }
 
 .markdesigner_back {
-  background-color: black;
+  background-color: var(--mdbgc);
 }
 
 
 .markdesigner_front {
-  background-color: red;
+  background-color: var(--mdfgc);
 }
 
 .markdesigner_colorpanel {
@@ -58,4 +62,35 @@
   min-width: 20px;
   width: 20px;
   height: 20px;
+}
+
+.md_fgc_t1 {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.md_fgc_t2 {
+  display: inline-block;
+}
+
+
+.md_fgc_t3 {
+  white-space: nowrap;
+  font-family: 'Lucida Console', monospace;
+  display: inline-block;
+}
+
+.md_fgc_t4 {
+  display: inline-block;
+}
+
+.md_fg_cc {
+  display: inline-block;
+  background-color: black;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}
+.all_canvas {
+  border: none;
 }
