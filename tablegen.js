@@ -203,6 +203,7 @@ function designerClick(e) {
   //console.log(a + ", " + b);
   designertoarray();
   updatemdcv1();
+  updatesample();
 }
 
 function md_update_bg() {
