@@ -47,6 +47,7 @@ var md_canvas4_cxt;
 var samplecanvas = document.getElementById("sample_canvas");
 var samplecxt;
 var sampleimage = new Image();
+sampleimage.src = imageext;
 
 function updatemdcv1() {
 	if (md_canvas1.getContext) {
@@ -142,10 +143,11 @@ function updatemdcv1() {
 
 function updatesample() {
 	if (samplecanvas.getContext) {
+		console.log("updatesample drawing");
 		samplecxt = samplecanvas.getContext("2d");
 		samplecxt.drawImage(sampleimage, 0, 0);
 		var bgc = getComputedStyle(rootstyle).getPropertyValue('--mdbgc');
-    	var fgc = getComputedStyle(rootstyle).getPropertyValue('--mdfgc');
+		var fgc = getComputedStyle(rootstyle).getPropertyValue('--mdfgc');
 		for (var k = 0; k < samplecoords.length; k++) {
 			for (var height = 0; height < 13; height++) {
 				for (var width = 0; width < 12; width++) {
@@ -323,7 +325,6 @@ if (oldfgg) document.getElementById("md_fg_g").value = oldfgg;
 if (oldfgb) document.getElementById("md_fg_b").value = oldfgb;
 document.getElementById("md_bg_cb").checked = true;
 document.getElementById("md_fg_cb").checked = true;
-
 var formmdbg = document.getElementById("md_bg");
 formmdbg.addEventListener("input", md_preview_bg);
 var formmdfg = document.getElementById("md_fg");
@@ -332,6 +333,6 @@ md_preview_bg();
 md_update_bg();
 md_preview_fg();
 md_update_fg();
+document.getElementById("testimage_img").style = "";
 document.getElementById("testimage_img").src = imageext;
-sampleimage.src = imageext;
 updatesample();
